@@ -7,45 +7,78 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">        
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DSC_Sahmyook</title>
+
 </head>
 <style>
 
         body{
-            padding: 150px;
+            padding-top: 80px;
+            padding-left: 40px;
+            padding-right: 40px;
             text-align: center;
-            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./syu.jpg'); no-repeat center center fixed; 
-            -webkit-background-size: cover;
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./syu.jpg');
+            -webkit-background-size: cover; 
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
             
         }
+                p {
+                    font-size:12px;
+                
+                }
+                div { font-size:60%; width:100%;}
+
+                h2 { font-size:60%; width:100%;}
+
         
 
 </style>
 <body>
-    <h1 style="font-size: 3rem; color: white;"> <img src="./dsc_logo.png" width="70">&nbsp; DSC_Sahmyook web project</h1>
+                  
+                <script src="http://code.jquery.com/jquery-latest.js"></script>
+                <script>
+                $(document).ready(function () {
+                    fontAuto();
+                
+                    function fontAuto() {
+                        $("div").css({
+                                   "fontSize" : Math.max(Math.min($("div").width() / (0.38 * 50)))
+                                     });
+                    }
+                
+                
+                 $(window).resize(function () {
+                       fontAuto();
+                  });
+                });
+                </script>
+
+    <div style="font-size: 50px; color: white;"> <img src="./dsc_logo.png" style="max-width: 20%; height: auto;">&nbsp; DSC_Sahmyook web project</div>
+    <br>
+    <br>
     <br>
     <br>
     <h2>
-            <a href="http://ghddnr13.github.io" target=" " title="HW's Portfolio" style=" font-size: 35px; color: white;">K홍욱
+            <a href="http://ghddnr13.github.io" target=" " title="HW's Portfolio" style=" font-size: 25px; color: white;">K홍욱
                 </a>
     </h2>
     <br>
     <br>
     <h2>
-            <a href="./My.html" target=" " title="MY's Timetable" style=" font-size: 35px; color: white;">H미연
+            <a href="./My.html" target=" " title="MY's Timetable" style=" font-size: 25px; color: white;">H미연
                 </a>
     </h2>
     <br>
     <br>
     <h2>
-            <a href="http://bbongdda.github.io" target=" " title="JM's Portfolio" style=" font-size: 35px; color: white;">L정민
+            <a href="http://bbongdda.github.io" target=" " title="JM's Portfolio" style=" font-size: 25px; color: white;">L정민
                 </a>
     </h2>
     <br>
     <br>
     <br>
     <h3 style="color: white;">TEAM_KHL</h3>
+    <br>
 </body>
 </html>
